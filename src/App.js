@@ -1,5 +1,6 @@
 
 import './App.css';
+import Navbar from './Landing_page/Navbar';
 import Home from './Landing_page/Home';
 import Donor from './Landing_page/donor';
 import { Route, Routes } from "react-router-dom";
@@ -18,6 +19,7 @@ import Register from './authentication/Register';
 function App() {
   return (
     <div className="App">
+      <Navbar />
      <Routes>
        <Route exact path="/" element={ <Home />}/>
        <Route exact path="/contact" element={ <Contact />}/>
