@@ -1,7 +1,9 @@
 import React from "react";
 
 function What(){
-    <div></div>
+    <div>
+        <h1>What we do</h1>
+    </div>
 }
 
 export default What
