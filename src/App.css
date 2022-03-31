@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-area{
+  background-image: url('./authentication/static/images/image.png');
+  height: 550px;
+  width: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.login-page{
+  overflow-x: hidden;
+}
+.check{
+  background-image: linear-gradient(#80D5FA,#a9ddf3,#c2e5f5);
+  background-size: contain;
+  height: 635px;
+}
