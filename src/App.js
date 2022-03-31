@@ -10,6 +10,10 @@ import What from './Landing_page/whatwedo';
 // import Makerequest from './Landing_page/makerequest';
 
 
+import Login from './authentication/Login';
+import Check from './authentication/Check-request';
+import Register from './authentication/Register';
+
 
 function App() {
   return (
@@ -20,12 +24,19 @@ function App() {
        <Route exact path="/donor" element={ <Donor />}/>
        <Route exact path="/makerequest" element={ <Makerequest />}/>
        <Route exact path="/what" element={ <What />}/>
+       <Route exact path="/login" element={<Login/>}/>
+       <Route exact path="/register" element={<Register/>}/>
+       <Route exact path="/check" element={<Check/>}/>
 
        
      </Routes>
      
 
     
+
+  <Routes>
+  
+  </Routes>
     </div>
   );
 }

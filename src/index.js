@@ -3,16 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
- import { BrowserRouter as Router } from "react-router-dom";
-// import Donor from "./Landing_page/donor";
-// import Makerequest from "./Landing_page/makerequest";
-// import Home from "./Landing_page/Home";
-
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  
-    <Router><App /></Router>,
-  
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 

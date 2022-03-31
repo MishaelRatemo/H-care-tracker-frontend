@@ -8,12 +8,14 @@ import logo from "./static/images/LOGO-bg.png"
 function Home(){
 return(
     <div>
+
+        <div className="home container-fluid h-100" >
         <nav className="navbar navbar-dark default-color justify-content-between">
                 <a id="navbar-brand" href="/">H.Care Tracker</a>
                 <div className="form-inline my-1">
             <div class="md-form form-sm my-0">
                 <Link to="/login"><button className="btn btn-outline-white display-4" type="submit" Link to="/login">Login</button></Link>
-                <Link to="/signup"><button className="btn   " type="signup" Link to="/contact">Sign-up</button></Link>
+                <Link to="/register"><button className="btn   " type="signup">Sign-up</button></Link>
             </div>
                 
             </div>
@@ -29,6 +31,8 @@ return(
                 <pre></pre>
                 <Link to="/contact"><h3 className="btn btn-success text-dark" Link to="/Contact">Contact</h3></Link>
             </footer>
+        </div>
+
         </div>
 
     </div>
