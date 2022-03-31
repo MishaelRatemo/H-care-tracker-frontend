@@ -1,6 +1,8 @@
 import React from "react";
 import "./home.css";
-//import { Outlet, Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import logo from "./static/images/LOGO-bg.png"
+
 
 
 function Home(){
@@ -10,22 +12,22 @@ return(
                 <a id="navbar-brand" href="/">H.Care Tracker</a>
                 <div className="form-inline my-1">
             <div class="md-form form-sm my-0">
-                <button className="btn btn-outline-white btn-sm my-0" type="submit" Link to="/login">Login</button>
-                <button className="btn btn-outline-white btn-sm my-0" type="submit" Link to="/signup">Sign-up</button>
+                <Link to="/login"><button className="btn btn-outline-white display-4" type="submit" Link to="/login">Login</button></Link>
+                <Link to="/signup"><button className="btn   " type="signup" Link to="/contact">Sign-up</button></Link>
             </div>
                 
             </div>
         </nav>
 
-        <div className="Image">
-            <img src="./src/Landing_page/static/images/LOGO-bg.png" alt="" />
+        <div >
+            <img className="img-fluid" src={ logo } alt="" />
             <p>Efficient Tracking at your Fingertips</p>
         </div>
         <div className="footer-home">
             <footer>
-                <h3 a-href="/what">What We Do</h3>
+                <Link to="/whatwedo"><h3 className="btn btn-success text-dark" Link to="/what">What We Do</h3></Link>
                 <pre></pre>
-                <h3>Contact</h3>
+                <Link to="/contact"><h3 className="btn btn-success text-dark" Link to="/Contact">Contact</h3></Link>
             </footer>
         </div>
 
