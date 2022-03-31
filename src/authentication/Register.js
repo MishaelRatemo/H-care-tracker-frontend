@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
 
 function Register() {
   return (
@@ -10,7 +13,10 @@ function Register() {
                 <h5 className="mt-5 pt-5">
                   <u >Already Have an account?</u>
                 </h5>
-                <button className="btn btn-info col-3 text-white fw-bold">LOGIN</button>
+
+                <Link to="/login"><button className="btn btn-info  fs-3 text-white fw-bolder" type="submit" Link to="/login">LOGIN</button></Link>
+
+                {/* <button className="btn col-3 text-white fw-bold">LOGIN</button> */}
               </div>
           </div>
           <div className="col-md-4 email mt-5">

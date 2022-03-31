@@ -1,22 +1,26 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import image from "./static/images/image.png";
+
 
 function Login() {
   return (
-    <div>
-      <div className="login-page ">
-        <div className="row">
-          <div className="col-md-4 bg-area mt-5 pt-5">
-            <h1 className="ms-5 mt-5 ps-5 display-3 text-primary">WELCOME</h1>
-            <h6>Sign in to your account.</h6>
-
-            <h5 className="mt-5">
-              <u>Have no account?</u>
-            </h5>
-            <Link to="/register"><button className="btn btn-info"> SIGN UP</button></Link>
+    <div className="bdy">
+      <div className="">
+        <div className="d-flex justify-content-around">
+            <div className="card bg-dark text-white">
+            <img src={ image} className="card-img" alt="..." />
+            <div className="card-img-overlay position-absolute">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p className="card-text">Last updated 3 mins ago</p>
+            </div>
           </div>
-          <div className="col-md-4 email mt-5">
+          
+        
+          
+          {/* <div className="col-md-4 email mt-5">
             <form className="mt-5">
               <input
                 className="mt-5 mb-5 input border-success border-0 border-4 border-bottom"
@@ -45,13 +49,14 @@ function Login() {
               </a>
               <br />
               <button
-                className="btn btn-lg btn-primary px-5 mt-5 text-white col-6"
+                className="btn btn-lg btn-info px-5 mt-5 text-white col-6"
                 type="submit"
               >
                 Submit
               </button>
             </form>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </div>
